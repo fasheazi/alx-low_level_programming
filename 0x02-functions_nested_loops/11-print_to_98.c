@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - n to 98
+ * print_to_98 - n to 98
  * n: number input
  * Return: Always 0 
  */

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main -  24 hour clock
+ * jack_bauer -  24 hour clock
  * / 10 allows second digit to rotate
  * for loop breaks before passing 24:00
  * Return: 24 hour clock line by line
