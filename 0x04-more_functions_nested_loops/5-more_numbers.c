@@ -1,30 +1,37 @@
-/*Fash did this*/
 #include "main.h"
-
 /**
- * more_numbers -  01234567891011121314\n x10
- *
- * Return: void
+ * more_numbers - Starts here
+ * prints numbers from 0 - 14 and adds a new line
+ * Return: 0
  */
-
-
 void more_numbers(void)
 {
-	char a, b, c, i;
+	int i;
+	int first_num;
+	int second_num;
+	int res;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+	res = 0;
+	while (i < 10)/* run the code below 10 times */
 	{
-		for (c = 0; c <= 14; c++)
+		while (res <= 14)/* in as much as result is < 14 execute below code*/
 		{
-			if (c < 10)
-				b = c;
+			if (res < 10)/*append result to second number if it's < 10 */
+			{
+				second_num = res;
+			}
 			else
 			{
-				a = c / 10; b = c % 10;
-				_putchar('0' + a);
+				first_num = res / 10;
+				second_num = res % 10;
+				_putchar (first_num + '0');
 			}
-			_putchar('0' + b);
+			_putchar (second_num + '0');
+			res++;
 		}
-		_putchar('\n');
+		i++;
+		res = 0;
+		_putchar ('\n');
 	}
 }
